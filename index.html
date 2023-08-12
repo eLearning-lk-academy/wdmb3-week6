@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .para{
+            border-bottom: 2px solid red;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div id="para1" class="para">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Obcaecati pariatur, iusto, unde animi voluptatem natus perspiciatis veritatis neque consectetur rem maiores enim sint autem. Illo accusamus perferendis esse tempora quisquam.
+    </div>
+    <div id="para2" class="para">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Obcaecati pariatur, iusto, unde animi voluptatem natus perspiciatis veritatis neque consectetur rem maiores enim sint autem. Illo accusamus perferendis esse tempora quisquam.
+    </div>
+    <div id="para3" class="para">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Obcaecati pariatur, iusto, unde animi voluptatem natus perspiciatis veritatis neque consectetur rem maiores enim sint autem. Illo accusamus perferendis esse tempora quisquam.
+    </div>
+    <p class="para">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora id obcaecati maxime voluptate veniam cum quae dolores minima mollitia corrupti. Reprehenderit fuga autem odio dicta deserunt dolore illo laudantium enim.
+    </p>
+    <p class="para">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora id obcaecati maxime voluptate veniam cum quae dolores minima mollitia corrupti. Reprehenderit fuga autem odio dicta deserunt dolore illo laudantium enim.
+    </p>
+    <div>no class</div>
+    <input type="text" name="textInput">
+    <script>
+        console.log('Hello World');
+        console.log(document.getElementById('para1'))
+        console.log(document.getElementsByClassName('para'))
+        console.log(document.getElementsByClassName('para')[0])
+        console.log(document.getElementsByName('textInput'))
+        console.log(document.getElementsByTagName('p'))
+
+        console.log(document.querySelector('.para'))
+        console.log(document.querySelectorAll('div.para'))
+
+        document.querySelector('#para1').innerHTML = "Chaged by JS"
+        
+        //line comment
+        /*
+        block comment
+        */
+
+    </script>
+</body>
+</html>
